@@ -8,7 +8,7 @@ Concurrency issues can turn the simplest of code into a debugging nightmare. Thi
 ### What happens when 10 threads execute 1000 iterations of `i++` concurrently?  
 
 A straightforward guess might be:
-10 threads * 1000 iterations = 10,000
+#### 10 threads * 1000 iterations = 10,000
 
 But the actual result? **Not always!**
 
