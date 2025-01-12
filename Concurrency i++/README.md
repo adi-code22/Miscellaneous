@@ -33,6 +33,7 @@ Here are two approaches to ensure thread safety:
 ### 1. **Using AtomicInteger**
 
 Java's `AtomicInteger` uses **compare-and-swap (CAS)** to handle updates safely:  
+
 ```java
 AtomicInteger i = new AtomicInteger(0);
 i.incrementAndGet();
@@ -55,6 +56,7 @@ The repository contains:
 ### Key Snippets
 
 #### Without Fix (Race Condition)
+
 ```java
 int i = 0;
 
@@ -65,6 +67,7 @@ Runnable task = () -> {
 };
 
 #### With Fix (Atomic Integer)
+
 ```java
 AtomicInteger i = new AtomicInteger(0);
 
