@@ -19,20 +19,7 @@ This repository contains practical, real-world examples of how to create and use
 
 #### Included Annotations
 
-1. @TrackExecutionTime
-
-Measure and log how long a method takes to execute. Ideal for performance profiling.
-
-Example:
-
-```java
-@TrackExecutionTime
-public void processOrder() {
-    // business logic
-}
-```
-
-2. @RateLimit(limit = 3)
+1. @RateLimit(limit = 3)
 
 Limit access to a method or API to a specified number of hits. Simple rate limiting with custom behavior.
 
@@ -40,9 +27,9 @@ Example:
 
 ```java
 @RateLimit(limit = 3)
-@GetMapping("/sensitive-data")
+@GetMapping("/ping")
 public String fetchData() {
-    return "Restricted info";
+    return "pong";
 }
 ```
 
@@ -53,15 +40,15 @@ Behind the scenes, Spring AOP intercepts annotated methods and injects the behav
 #### Getting Started
 
 1. Clone the repo
-
+```
 git clone https://inkd.in/gc7rfjyb
 cd your-repo-name
-
+```
 
 2. Build & Run
-
+```
 ./mvnw spring-boot:run
-
+```
 
 3. Try out the endpoints and observe logs or behavior based on annotations!
 
