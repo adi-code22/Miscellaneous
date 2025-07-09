@@ -1,3 +1,9 @@
+/*
+* AI Generated Code
+* @author ChatGPT
+*
+*/
+
 import java.util.BitSet;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
